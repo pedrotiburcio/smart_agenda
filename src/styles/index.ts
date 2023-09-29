@@ -11,7 +11,7 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   body {
-    background-color: #f1f2f6;
+    background-color: ${variaveis.azulRoyal};
   }
 `
 
@@ -19,9 +19,13 @@ export const Container = styled.div`
   margin: 0 auto;
 `
 export const ContainerContatos = styled.main`
-  padding: 24px 56px;
+  padding: 24px 48px;
   height: 100vh;
   text-align: center;
+
+  @media (max-width: 768px) {
+    padding: 24px 12px;
+  }
 `
 
 export const Titulo = styled.h2`
@@ -35,9 +39,13 @@ export const CampoPesquisa = styled.input`
   padding: 8px;
   margin-bottom: 24px;
   border-radius: 8px;
-  width: 50%;
+  width: 50vw;
   text-align: center;
   font-size: 20px;
+
+  @media (max-width: 1024px) {
+    width: 80vw;
+  }
 `
 export const Botao = styled.button`
   font-size: 14px;

@@ -31,15 +31,17 @@ const Formulario = () => {
       <Titulo style={{ marginBottom: 40 }}>Novo contato</Titulo>
       <Form onSubmit={cadastrarContato}>
         <CampoCadastro
+          required
           value={nome}
           onChange={(evento) => setNome(evento.target.value)}
           type="text"
           placeholder="Nome do contato"
         />
         <CampoCadastro
+          required
           value={telefone}
           onChange={(evento) => setTelefone(evento.target.value)}
-          type="telefone"
+          type="tel"
           placeholder="Telefone do contato"
         />
         <CampoCadastro
@@ -48,7 +50,9 @@ const Formulario = () => {
           type="email"
           placeholder="E-mail do contato"
         />
-        <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
+        <BotaoSalvar type="submit" style={{ fontSize: 18 }}>
+          Cadastrar
+        </BotaoSalvar>
       </Form>
     </ContainerContatos>
   )

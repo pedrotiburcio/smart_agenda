@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Header = styled.header`
   padding: 24px;
-  background-color: #2c2c54;
+  background-color: ${variaveis.brancoGelo};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,4 +13,16 @@ export const Header = styled.header`
 `
 export const ContainerLetras = styled.div`
   display: flex;
+
+  @media (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 4px;
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 4px;
+  }
 `

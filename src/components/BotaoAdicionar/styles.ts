@@ -5,8 +5,8 @@ import variaveis from '../../styles/variaveis'
 export const BotaoAdd = styled(Link)`
   height: 64px;
   width: 64px;
-  background-color: ${variaveis.verde};
-  color: #fff;
+  background-color: ${variaveis.azulClaro};
+  color: ${variaveis.preto};
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -16,4 +16,12 @@ export const BotaoAdd = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    height: 48px;
+    width: 48px;
+    bottom: 24px;
+    right: 24px;
+    font-size: 32px;
+  }
 `

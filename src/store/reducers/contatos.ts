@@ -6,56 +6,7 @@ type ContatosState = {
 }
 
 const initialState: ContatosState = {
-  itens: [
-    {
-      id: 1,
-      nome: 'Pedro Araújo',
-      telefone: '(83) 999640684',
-      email: 'pedrotiburcio10@gmail.com'
-    },
-    {
-      id: 4,
-      nome: 'Pedro Henri',
-      telefone: '(83) 999640685',
-      email: 'pedrohenri10@gmail.com'
-    },
-    {
-      id: 2,
-      nome: 'Zenilda Araújo',
-      telefone: '(83) 987335888',
-      email: 'zenildagaraujo@gmail.com'
-    },
-    {
-      id: 3,
-      nome: 'Elleeeem Ilana',
-      telefone: '(83) 986936892',
-      email: 'ellemilana.as@gmail.com'
-    },
-    {
-      id: 5,
-      nome: 'Beyonce',
-      telefone: '(83) 998735643',
-      email: 'beyon10@gmail.com'
-    },
-    {
-      id: 6,
-      nome: 'Zidane',
-      telefone: '(83) 999612325',
-      email: 'zidane@gmail.com'
-    },
-    {
-      id: 7,
-      nome: 'Tomas',
-      telefone: '(83) 899335888',
-      email: 'tomas@hotmail.com'
-    },
-    {
-      id: 8,
-      nome: 'Lizzie',
-      telefone: '(83) 987748912',
-      email: 'lizzie@msn.com'
-    }
-  ]
+  itens: []
 }
 
 const contatosSlice = createSlice({

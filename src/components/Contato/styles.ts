@@ -3,8 +3,8 @@ import variaveis from '../../styles/variaveis'
 import { Botao } from '../../styles'
 
 export const Card = styled.div`
-  background-color: #4bcffa;
-  color: #fff;
+  background-color: ${variaveis.brancoGelo};
+  color: ${variaveis.preto};
   box-shadow: inset 2px 4px rgba(0, 0, 0, 0.5);
   padding: 16px 16px 0px 16px;
   border-radius: 16px;
@@ -27,7 +27,7 @@ export const ValorInfo = styled.input`
   border: none;
   resize: none;
   background-color: transparent;
-  color: #000;
+  color: ${variaveis.preto};
   font-size: 16px;
   line-height: 16px;
   width: 80%;
@@ -46,5 +46,5 @@ export const BotaoCancelarRemover = styled(Botao)`
 export const MensagemEdicao = styled.em`
   font-size: 18px;
   font-weight: bold;
-  color: #182c61;
+  color: ${variaveis.azulRoyal};
 `

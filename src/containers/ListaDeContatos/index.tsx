@@ -45,7 +45,9 @@ const ListaDeContatos = () => {
 
   return (
     <ContainerContatos>
-      <Titulo as="p">{mensagem}</Titulo>
+      <Titulo as="p" style={{ color: '#fff' }}>
+        {mensagem}
+      </Titulo>
       <Lista>
         {contatos.map((c) => (
           <li key={c.id}>
