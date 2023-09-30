@@ -15,7 +15,7 @@ const ListaDeContatos = () => {
 
     if (criterio === 'letra') {
       contatosFiltrados = contatosFiltrados.filter(
-        (item) => item.nome[0] === valor
+        (item) => item.nome[0].toUpperCase() === valor
       )
     }
     if (termo) {
